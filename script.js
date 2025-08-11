@@ -32,3 +32,12 @@ enunciado: "Pergunta 5",
 alternativas: ["Alternativa 1","Alternativa 2"]
 }
 ];
+
+let atual = 0;
+let pertguntaAtual;
+
+function mostraPergunta(){
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = pertguntaAtual.enunciado;   
+}
+mostraPergunta();
