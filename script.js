@@ -1,20 +1,34 @@
-const caixaPrincipal = document.querySlector(".caixa-principal");
- 
-const caixaPergutas = document.querySlector(".caixa-Pergutas");
+const caixaPrincipal = document.querySelector('.caixa-principal');
 
-const caixaAlternativas = document.querySlector(".caixa- alternativas");
+const caixaPerguntas = document.querySelector('.caixa-perguntas');
 
-const caixaResultado = document.querySlector(".caixa-resultado");
+const caixaAlternativas = document.querySelector('.caixa-alternativas');
 
-const caixaResultado = document.querySlector(".texto-resultado");
+const caixaResultado = document.querySelector('.caixa-resultado');
 
-const lista = []
+const textoResultado = document.querySelector('.texto-Resultado');
 
-const pergunta = ]
+const lista = [];
+
+const perguntas = [
 {
-    enuciado:"pergunta 1",
-    alternativa: [
-        "alternativa 1", 
-        "alternativa 2", 
-    ]
+enunciado: "Pergunta 1",
+alternativas: ["Alternativa 1","Alternativa 2"]
+},
+{
+enunciado: "Pergunta 2",
+alternativas: ["Alternativa 1","Alternativa 2" ]
+},
+{
+enunciado: "Pergunta 3",
+alternativas: ["Alternativa 1","Alternativa 2" ]
+},
+{
+enunciado: "Pergunta 4",
+alternativas: ["Alternativa 1","Alternativa 2"]
+},
+{
+enunciado: "Pergunta 5",
+alternativas: ["Alternativa 1","Alternativa 2"]
 }
+];
