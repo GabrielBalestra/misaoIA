@@ -69,7 +69,7 @@ function mostraPergunta(){
 
     function respostaSelecionada(opcaoselecionada) {
         const afirmacos = opcaoselecionada.afirmacos;
-        historiaFi
+        historiaFinal
     }
 
 mostraPergunta();
