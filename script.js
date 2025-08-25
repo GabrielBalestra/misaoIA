@@ -50,17 +50,26 @@ const perguntas = [
 
 let atual = 0;
 let pertguntaAtual;
+if atual >=perguntas.length){
+    mostraResultado();
+    return;
+}
 
 function mostraPergunta(){
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = pertguntaAtual.enunciado;   
 }
     function mostraPergunta()[
-        for(const alternativas of perguntaAtual.alternativas){
+        for(const alternativa of perguntaAtual.alternativas){
             const botaoAlternariva=document.createElement("button");
             botaoAlternariva.textContent = alternativas.texto;
             caixaAlternativas.appendChild(botaoAlternariva);
         }
     ]
+
+    function respostaSelecionada(opcaoselecionada) {
+        const afirmacos = opcaoselecionada.afirmacos;
+        historiaFi
+    }
 
 mostraPergunta();

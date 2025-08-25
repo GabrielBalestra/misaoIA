@@ -9,7 +9,21 @@
 
 body{
     background-color: var(--cor-fundo);
-    color:var(--cor-texto);
-    
-
+    color:var(--cor-texto); 
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 100vh;
+}
+.caixa-principal{
+    background-color:ver(--cor-secundaria);
+    color: var(--cor-texto);
+    border: nome;
+    border-radius: 15px;
+    padding: 15;
+    transition: background-color 0,3s;
+}
+button:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
 }
