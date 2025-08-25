@@ -1,15 +1,8 @@
 const caixaPrincipal = document.querySelector('.caixa-principal');
-
 const caixaPerguntas = document.querySelector('.caixa-perguntas');
-
 const caixaAlternativas = document.querySelector('.caixa-alternativas');
-
 const caixaResultado = document.querySelector('.caixa-resultado');
-
 const textoResultado = document.querySelector('.texto-Resultado');
-
-const lista = [];
-
 const perguntas = [
     {
         enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
@@ -54,22 +47,29 @@ if atual >=perguntas.length){
     mostraResultado();
     return;
 }
-
-function mostraPergunta(){
     perguntaAtual = perguntas[atual];
-    caixaPerguntas.textContent = pertguntaAtual.enunciado;   
+    caixaPerguntas.textContent = pertguntaAtual.enunciado;
+    caixaAlternativas.textContent = "";
+    mostraAlternativas();
 }
     function mostraPergunta()[
         for(const alternativa of perguntaAtual.alternativas){
             const botaoAlternariva=document.createElement("button");
             botaoAlternariva.textContent = alternativas.texto;
+            botaoAlternariva.addEventListener(cancelIdleCallback, ()=> respostaSelecionada(alternativa))
             caixaAlternativas.appendChild(botaoAlternariva);
         }
     ]
 
     function respostaSelecionada(opcaoselecionada) {
         const afirmacos = opcaoselecionada.afirmacos;
-        historiaFinal
+        historiaFinal += +""; 
+        atual++;
+        mostraPergunta();
     }
-
+ function mostraResultado(){
+        caixaPerguntas.textContent = "em 2049...";
+        textoResultado.textContent = historiaFinal;
+        caixaAlternativas.textContent = "";
+ }
 mostraPergunta();
